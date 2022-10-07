@@ -35,10 +35,6 @@ else
     Console.Write($"{a} -> нет");
 }
 
-
-// Console.Write($"{b5}");
-
-
 /* Задача 21
 
 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -55,3 +51,23 @@ A (7,-5, 0); B (1,-1,9) -> 11.53 */
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125 */
+
+Console.WriteLine("____________________");
+Console.WriteLine("Задача 3");
+Console.WriteLine();
+
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine()!);
+int a3 = 1;
+int result = 0;
+
+Console.WriteLine();
+Console.Write("Ответ: ");
+while (a3 <= num) 
+{
+    result = Convert.ToInt32 (Math.Pow(a3, 3));
+    Console.Write($"{result}, ");
+    a3++;
+}
+Console.SetCursorPosition(Console.CursorLeft - 2, Console.CursorTop);
+Console.WriteLine("  ");
