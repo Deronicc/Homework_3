@@ -39,17 +39,17 @@ A (7,-5, 0); B (1,-1,9) -> 11.53 */
 Console.WriteLine("____________________");
 Console.WriteLine("Задача 2");
 Console.WriteLine();
-Console.WriteLine("Введите координату A(x) первой точки: ");
+Console.WriteLine("Введите координату A(x)");
 int xa = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координату A(у) первой точки: ");
+Console.WriteLine("Введите координату A(у)");
 int ya = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координату A(z) первой точки: ");
+Console.WriteLine("Введите координату A(z)");
 int za = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координату B(x) второй точки: ");
+Console.WriteLine("Введите координату B(x)");
 int xb = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координату B(y) второй точки: ");
+Console.WriteLine("Введите координату B(y)");
 int yb = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координату B(z) второй точки: ");
+Console.WriteLine("Введите координату B(z)");
 int zb = int.Parse(Console.ReadLine()!);
 
 
