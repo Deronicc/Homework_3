@@ -1,11 +1,7 @@
-﻿/* Задача 19
-
-Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом. (можно решить через строку, а можно математически)
+﻿/* Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом. (можно решить через строку, а можно математически)
 
 14212 -> нет
-
 12821 -> да
-
 23432 -> да */
 
 Console.WriteLine("____________________");
@@ -35,19 +31,33 @@ else
     Console.Write($"{a} -> нет");
 }
 
-/* Задача 21
-
-Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+/* Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 A (3,6,8); B (2,1,-7), -> 15.84
-
 A (7,-5, 0); B (1,-1,9) -> 11.53 */
 
-/* Задача 23
+Console.WriteLine("____________________");
+Console.WriteLine("Задача 2");
+Console.WriteLine();
+Console.WriteLine("Введите координату A(x) первой точки: ");
+int xa = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите координату A(у) первой точки: ");
+int ya = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите координату A(z) первой точки: ");
+int za = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите координату B(x) второй точки: ");
+int xb = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите координату B(y) второй точки: ");
+int yb = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите координату B(z) второй точки: ");
+int zb = int.Parse(Console.ReadLine()!);
 
 
+double result = Math.Sqrt (Math.Pow ((xb - xa), 2) + Math.Pow ((yb - ya), 2)+ Math.Pow ((zb - za), 2));
+Console.WriteLine();
+Console.Write($"Ответ: A({xa}, {ya}, {za}); B({xb}, {yb}, {zb}) -> {result:f2}");
 
-Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+/* Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125 */
@@ -55,18 +65,17 @@ A (7,-5, 0); B (1,-1,9) -> 11.53 */
 Console.WriteLine("____________________");
 Console.WriteLine("Задача 3");
 Console.WriteLine();
-
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
 int a3 = 1;
-int result = 0;
+int result1 = 0;
 
 Console.WriteLine();
 Console.Write("Ответ: ");
 while (a3 <= num) 
 {
     result = Convert.ToInt32 (Math.Pow(a3, 3));
-    Console.Write($"{result}, ");
+    Console.Write($"{result1}, ");
     a3++;
 }
 Console.SetCursorPosition(Console.CursorLeft - 2, Console.CursorTop);
